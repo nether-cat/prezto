@@ -71,7 +71,7 @@ function _terminal-set-titles-with-path {
 
   local absolute_path="${${1:a}:-$PWD}"
   local abbreviated_path="${absolute_path/#$HOME/~}"
-  local truncated_path="${abbreviated_path/(#m)?(#c15,)/...${MATCH[-12,-1]}}"
+  local truncated_path="${abbreviated_path/(#m)?(#c15,)/...${MATCH[-16,-1]}}"
   unset MATCH
 
   set-window-title "$abbreviated_path"
