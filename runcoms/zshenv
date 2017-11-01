@@ -10,4 +10,7 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+
+. "/usr/local/opt/nvm/nvm.sh"
